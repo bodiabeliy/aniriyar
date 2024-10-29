@@ -34,7 +34,7 @@ const SpeakersAndSponsors = () => {
   };
   return (
     <>
-      <div className="SpeakersAndSponsorsWrapper h-[1450px] sm:mt-60 lg:mt-20 bg-speakersAndSponsors ">
+      <div className="SpeakersAndSponsorsWrapper h-[1450px] sm:mt-[-200px] lg:mt-20 bg-speakersAndSponsors ">
         <div id="speakers" className="SpeakersWrapper w-full flex justify-center flex flex-col m-auto">
           <p className="sm:text-4xl lg:text-6xl text-center font-bold ">
             Speakers:

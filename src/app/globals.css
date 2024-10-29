@@ -139,7 +139,9 @@ body::-webkit-scrollbar-thumb {
   .mobileTutorImage {
     top: 55%;
   }
-  
+  .aboutWrapper {
+    max-height: 550px;
+  }
 }
 @media (width>1024px){
   .slick-prev {
