@@ -24,7 +24,7 @@ const Banner = () => {
             Твій репетитор з англійської та <br /> французької мов 
                 <Image className="absolute sm:right-10 sm:top-[25%] lg:right-[50%] lg:top-[50%] sm:scale-50 lg:scale-100" src={Flags} alt={""}  />
             </div>
-            <div className="actionBtnWrapper sm:mt-[100%] sm:pb-[40px] lg:pb-0 lg:mt-20 sm:mb-0 sm:mb-0 lg:mb-10 flex sm:justify-center lg:justify-start">
+            <div className="actionBtnWrapper sm:mt-[100%] sm:pb-[20px] lg:pb-0 lg:mt-20 sm:mb-0 sm:mb-0 lg:mb-10 flex sm:justify-center lg:justify-start">
                 <ActionButton disabled={false} onClick={() =>{MoveTo()}} className={"actionBtn rounded-full border-white border-4 lg:font-semibold italic sm:text-2xl lg:text-3xl p-5 sm:w-[90%] lg:w-[270px] bg-transparent "} text={"Пробний урок"} />
                 </div>
             

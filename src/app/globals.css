@@ -109,7 +109,10 @@ body::-webkit-scrollbar-thumb {
     width: 390px;
     height: 390px; 
     top: 30%;
-   
+
+  }
+  .withbooks {
+    top: 12px;
   }
 
   
@@ -139,9 +142,10 @@ body::-webkit-scrollbar-thumb {
   .mobileTutorImage {
     top: 55%;
   }
-  .aboutWrapper {
-    max-height: 550px;
+  .withbooks {
+    top: 13%;
   }
+ 
 }
 @media (width>1024px){
   .slick-prev {

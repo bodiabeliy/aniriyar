@@ -8,6 +8,9 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    backgroundSize: {
+      "aboutSection":"auto 110%"
+    },
     fontFamily: {
       inter:[
         '"Inter", sans-serif',
@@ -53,7 +56,7 @@ const config: Config = {
     backgroundImage: {
       tutorBanner: `url("../components/images/Rectangle 1.png")`,
       aboutSection: `url("../components/images/Rectangle 2.png")`,
-      speakersAndSponsors: `url("../components/images/gradient 3-4.png")`,
+      feedbackSection: `url("../components/images/Rectangle 3.png")`,
 
       actionBtns:"linear-gradient(60deg, #E34586 20%, #5883D8 100%)",
       cardsBtns:"linear-gradient(60deg, #E34586 20%, #5883D8 100%)",
