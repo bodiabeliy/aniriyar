@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="lg:w-[1300px] lg:flex lg:justify-center flex-col m-auto">
         <Banner />
-        <Countdown />
+        {/* <Countdown /> */}
       </div>
 
       <About />

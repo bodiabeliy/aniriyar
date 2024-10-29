@@ -60,7 +60,7 @@ export const Form = () => {
   return (
     <section id="form" className="formWrapper w-full flex justify-center sm:mt-[-230px] lg:mt-[0px] sm:mb-2 lg:mb-10">
       <div className="  rounded-[30px] bg-purpure z-10 p-1 sm:w-[300px] lg:w-[560px] sm:h-[350px] lg:h-[450px] sm:mb-8 lg:mb-0">
-        <div className="relative rounded-[30px] bg-backgroundColor flex flex-col justify-start sm:w-[290px] lg:w-[550px] h-full p-5">
+        <div className="relative rounded-[30px] bg-white flex flex-col justify-start sm:w-[290px] lg:w-[550px] h-full p-5">
          <div className="flex flex-col">
           <p className="sm:text-4xl lg:text-4xl sm:text-center lg:text-center font-bold mb-10">Registration to conference  </p>
           <input className={`${notEmpty &&" border-[3px] border-[#f44336]"} p-5 rounded-[20px] w-full text-[#000]`} type="text" placeholder="Enter email..." onChange={(e) => SendEmail(e)} value={email}/>

@@ -9,11 +9,8 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: [
-        '"Inter var", sans-serif',
-      ],
-      pixel: [
-        '"Pixelify Sans", serif'
+      inter:[
+        '"Inter", sans-serif',
       ]
     },
     letterSpacing: {
@@ -47,14 +44,14 @@ const config: Config = {
       // => @media (min-width: 1920px) { ... }
     },
     colors: {
-     textColor:"#fff",
-     hoveredLinks:"#E34586",
-     backgroundColor:"#2C073A",
+     white:"#fff",
+     textColor:"#1C0606",
+     hoveredLinks:"#eda551",
      purpure:"#6E4593",
      transparent:"transparent"
     },
     backgroundImage: {
-      cryptogoatBanner: `url("../components/images/Conference banner background.png")`,
+      tutorBanner: `url("../components/images/Rectangle 1.png")`,
       aboutSection: `url("../components/images/about section.png")`,
       speakersAndSponsors: `url("../components/images/gradient 3-4.png")`,
 

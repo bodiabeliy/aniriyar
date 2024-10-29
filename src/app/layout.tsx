@@ -9,9 +9,9 @@ export default function LocaleLayout({
 }) {
   return (
     <html style={{scrollBehavior:'smooth'}}>
-      <body className="app bg-backgroundColor text-textColor lg:w-full">
-      <div className="bg-cryptogoatBanner md:h-screen">
-          <div className="">
+      <body className="app bg-white text-textColor lg:w-full">
+      <div className="tutor bg-tutorBanner md:h-screen">
+          <div>
           <NavigationManu />
           {children}
           <Footer />

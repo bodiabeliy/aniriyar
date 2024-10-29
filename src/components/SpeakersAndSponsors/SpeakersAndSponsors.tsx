@@ -46,7 +46,7 @@ const SpeakersAndSponsors = () => {
                   return (
                     <>
                       <div className="cardsBtns-animate rounded-[20px] bg-actionBtns z-10 p-1 w-full max-w-[300px] sm:mb-8 lg:mb-0 m-auto">
-                        <div className="rounded-[20px] bg-backgroundColor flex flex-col justify-center max-w-[300px]">
+                        <div className="rounded-[20px] bg-white flex flex-col justify-center max-w-[300px]">
                           <div className="p-3 flex flex-col justify-center">
                             <img
                               className="m-3 w-full"

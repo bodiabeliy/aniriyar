@@ -12,26 +12,26 @@ const CountdownTimer = () => {
       return (
         <>
           <div className="cardsBtns-animate rounded-[20px] bg-cardsBtns animate z-10 w-full p-1 sm:w-[70px] sm:h-[70px] lg:w-[100px] lg:h-[100px]">
-            <div className="rounded-[20px] bg-backgroundColor h-[100%] flex flex-col justify-center">
+            <div className="rounded-[20px] bg-white h-[100%] flex flex-col justify-center">
               <p className="text-center sm:text-xl lg:text-3xl">{days}</p>
               <p className="text-center">days</p>
             </div>
           </div>
           <div className="cardsBtns-animate rounded-[20px] bg-cardsBtns z-10 w-full p-1 sm:w-[70px] sm:h-[70px] lg:w-[100px] lg:h-[100px]">
-            <div className="rounded-[20px]  bg-backgroundColor h-[100%] flex flex-col justify-center">
+            <div className="rounded-[20px]  bg-white h-[100%] flex flex-col justify-center">
               <p className="text-center sm:text-xl lg:text-3xl">{hours}</p>
               <p className="text-center">hours</p>
             </div>
           </div>
           <div className="cardsBtns-animate rounded-[20px] bg-cardsBtns z-10 w-full p-1 sm:w-[70px] sm:h-[70px] lg:w-[100px] lg:h-[100px]">
-              <div className="rounded-[20px]  bg-backgroundColor h-[100%] flex flex-col justify-center">
+              <div className="rounded-[20px]  bg-white h-[100%] flex flex-col justify-center">
                 <p className="text-center sm:text-xl lg:text-3xl">{minutes}</p>
                 <p className="text-center">minutes</p>
               </div>
             </div>
 
             <div className="cardsBtns-animate rounded-[20px] bg-cardsBtns z-10 w-full p-1 sm:w-[70px] sm:h-[70px] lg:w-[100px] lg:h-[100px]">
-              <div className="rounded-[20px] bg-backgroundColor h-[100%] flex flex-col justify-center">
+              <div className="rounded-[20px] bg-white h-[100%] flex flex-col justify-center">
                 <p className="text-center sm:text-xl lg:text-3xl">{seconds}</p>
                 <p className="text-center">seconds</p>
               </div>
