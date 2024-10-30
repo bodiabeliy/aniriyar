@@ -9,7 +9,7 @@ const config: Config = {
   ],
   theme: {
     backgroundSize: {
-      "aboutSection":"auto 110%"
+      "aboutSection":"auto 111%"
     },
     fontFamily: {
       inter:[

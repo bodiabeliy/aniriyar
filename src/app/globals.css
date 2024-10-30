@@ -80,24 +80,39 @@ body::-webkit-scrollbar-thumb {
 .slick-track {
   transform: translate3d(-4800px, 0px, 0px);
 }
+.slick-prev,
+.slick-next {
+  transform: scale(2) !important;
+}
+.slick-prev {
+  z-index: 333;
+}
 .actionBtn {
   font-family: "Inter" sans-serif !important;
 }
 
 .mobileTutorImage {
   position: absolute;
-
+}
+.rellsOverlay {
+  position: relative;
+}
+.rellsOverlay::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 
 @media (width<500px){
-  .slick-next {
-    /* left: 310px; */
-    right: 30px !important;
+  .slick-next::before {
+    display: none;
   }
-  .slick-prev {
-    /* left: 310px; */
-    left: 30px !important;
+  .slick-prev::before {
+   display: none;
   }
   .actionBtnWrapper {
     justify-content: flex-end !important;
@@ -118,15 +133,11 @@ body::-webkit-scrollbar-thumb {
   
 }
 @media (width<390px){
-  .slick-next {
-    /* left: 310px; */
-    right: 15px !important;
-    z-index: 11;
+  .slick-next::before {
+    display: none;
   }
-  .slick-prev {
-    /* left: 310px; */
-    left: 15px !important;
-    z-index: 11;
+  .slick-prev::before {
+   display: none;
   }
   .actionBtnWrapper {
     justify-content: center !important;

@@ -40,7 +40,7 @@ const About = () => {
                     <AccordionSummary
                       className="bg-transparent text-textColor"
                       expandIcon={<IconArrowCard fill="black" />}
-                      aria-controls={disscussion.topic}
+                      // aria-controls={disscussion.topic}
                       id={ disscussion.topic + `${"-" + disscussion.speaker}` }
                     >
                       {disscussion.topic}

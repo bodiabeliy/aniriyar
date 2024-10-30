@@ -7,65 +7,24 @@ export const discussionList = [
 
 export const speakersList =[
     {
-        name:"Sunny-Lu",
-        position:"Vechain",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Sunny-Lu.png"
+        name:"Cвітлана",
+        position:"Моя мама дуже задоволена заняттями з вами. І ми дуже раді що вона навчається у вас. Заняття проходять дуже легко і спокійно) Вона ніколи не відчувала напруги чи стресу. Ми побачили прогрес. Тому ми з впевніністю можемо вас рекомендувати як викладача",  },
+    {
+        name:"Влада",
+        position:"Ірина-чудовий репетитор. Розвивається, не стоїть на місці і розвиває мене. Знайшла підхід до мене і викладає інформацію цікаво і доступно. Допомагає мені покращити і підвищити рівень знань з англійської мови. Легко знаходить зі мною мову, приємна в спілкуваннІ.",
     },
     {
-        name:"Gracy-Chen",
-        position:"Bitget",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Gracy-Chen.png"
+        name:"Іванка",
+        position:"Висловлюю щирі слова подяки за ваш професійний підхід та велику терплячість під час вивчення англійської мови. Ви зробили величезний внесок у моє навчання, і я щиро вдячна за вашу підтримку та наставництво. Сподіваюся, що наступний рік буде не менш продуктивним.",
     },
     {
-        name:"Jean-Charles",
-        position:"OneFootballLabs",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Jean-Charles-Gaudechon.png"
+        name:"Поліна",
+        position:"Добрий день! Займаюся півроку - все подобається. Заняття проходять на зручній платформі. Уроки є зрозумілими та цікавими. Якщо у вас є пропозиції, щодо теми уроки, то вони будують виконанні у цікавому форматі",
     },
     {
-        name:"Alex Zinder",
-        position:"Ledger Enterprise",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Alex-Zinder.png"
+        name:"Катя",
+        position:"Дуже подобається з вами працювати Чітко і зрозуміло пояснюєте матеріал. Цікаві заняття. Завжди входите у становище і відноситесь з розумінням до непередбачених обставин.",
     },
-    {
-        name:"Max Kordek",
-        position:"Lisk",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Max-Kordek.png"
-    },
-    {
-        name:"Dina Sam'an",
-        position:"CoinMENA",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Dina-Sam_an.png "
-    },
-    {
-        name:"Nicole Purin",
-        position:"OKX",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Nicole-Purin.png"
-    },
-    {
-        name:"Jason Allegrante",
-        position:"Fireblocks",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Jason-Allegrante.png"
-    },
-    {
-        name:"Mohammed Alblooshi",
-        position:"Dubai International Financial Centre Authority",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Mohammed-Alblooshi.png"
-    },
-    {
-        name:"Helen Hai",
-        position:"Binance",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Helen-Hai.png"
-    },
-    {
-        name:"Nena Dokuzov",
-        position:"Alserkal Group",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Nena-Dokuzov.png"
-    },
-    {
-        name:"Reece Merrick",
-        position:"Ripple",
-        avatar:"https://crypto-conference.s3.amazonaws.com/speakers/Reece-Merrick.png"
-    }
 ]
 
 export const sponsorsList = [
