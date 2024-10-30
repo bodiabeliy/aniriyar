@@ -36,7 +36,7 @@ const About = () => {
            {discussionList?.map((disscussion: any, indx: number) => {
                 return (
                  <>
-                  <Accordion className="text-3xl font-bold bg-transparent sm:m-4 lg:m-1">
+                  <Accordion className="text-2xl font-bold bg-transparent sm:m-4 lg:m-1">
                     <AccordionSummary
                       className="bg-transparent text-textColor"
                       expandIcon={<IconArrowCard fill="black" />}
@@ -45,7 +45,7 @@ const About = () => {
                     >
                       {disscussion.topic}
                     </AccordionSummary>
-                    <AccordionDetails className="sm:m-3 lg:m-2 rounded-full text-xl text-textColor bg-white">
+                    <AccordionDetails className="sm:m-3 lg:m-2 rounded-full font-normal text-xl text-textColor bg-white">
                      {disscussion.speaker}
                     </AccordionDetails>
                   </Accordion>
