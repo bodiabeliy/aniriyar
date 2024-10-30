@@ -1,15 +1,8 @@
 export const discussionList = [
-    {topic:"What web 3.0 means for enterprises", speaker:"Sunny Lu"},
-    {topic:"Value creation in the metaverse", speaker:"Gracy Chen"},
-    {topic:"The role of stablecoins in a decentralized ecosystem", speaker:"Nena Dokuzov & Jean Charles Gaudechon"},
-    {topic:"Daos: new breed of internet-native organizations", speaker:"Max Kordek"},
-    {topic:"Maximizing esg impact with blockchain", speaker:"Helen Hai"},
-    {topic:"Bridging defi and cefi", speaker:"Jason Allegrante"},
-    {topic:"Web 3 gaming: the new frontier?", speaker:"Sunny Lu"},
-    {topic:"Central bank digital currencies, and cross-border payments", speaker:"Mohammed Albloosh"},
-    {topic:"Web 3: the future is here and now", speaker:"Sunny Lu"},
-    {topic:"Nft market overview: trends & opportunities", speaker:"Alex Zinder & Nicole Purin"},
-    {topic:"Interoperability - challenges and opportunities", speaker:"Dina Sam'an"}
+    {topic:"📚 Досвід", speaker:"Вже протягом 7 років займаюся репетиторством іноземних мов"},
+    {topic:"🌏 Широка аудиторія", speaker:"Навчаю учнів з 6+ країн"},
+    {topic:"🚀 Доступність", speaker:"Саме моє пояснення допомагало іншим"},
+
 ]
 
 export const speakersList =[
