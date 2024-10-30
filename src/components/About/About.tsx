@@ -24,7 +24,7 @@ const About = () => {
           </div>
           <div className="sm:mt-[-450px] lg:mt-0">
           <p className="sm:text-4xl lg:text-6xl sm:text-center lg:text-left font-bold ">Чому обирають мене?</p>
-            <Image className="withbooks absolute sm:left-[-35%] lg:left-[38px] lg:top-[180px] sm:scale-50 lg:top-[-50px] sm:scale-50 lg:scale-100" src={WithBooks} alt={""} />
+            <Image className="withbooks absolute sm:hidden lg:block sm:left-[-35%] lg:left-[38px] lg:top-[180px] sm:scale-50 lg:top-[-50px] sm:scale-50 lg:scale-100" src={WithBooks} alt={""} />
 
            <ol className="sm:ml-[35px] lg:ml-0 sm:p-[15px] lg:p-0">
             <li className="sm:text-[20px] lg:text-[28px] lg:leading-[80px] sm:overflow-y-scroll lg:overflow-y-auto">📚 Вже протягом <b>7</b> років займаюся репетиторством іноземних мов</li>
