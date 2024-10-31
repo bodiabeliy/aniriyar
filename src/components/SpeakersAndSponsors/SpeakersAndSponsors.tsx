@@ -10,6 +10,8 @@ import Reels1 from "../../../public/reels1.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import { BouncedLeftArrow } from "../icons/DoubleArrowLeft";
+import { BouncedRightArrow } from "../icons/DoubleArrowRight";
 
 const SpeakersAndSponsors = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -39,7 +41,7 @@ const SpeakersAndSponsors = () => {
     <>
       <div className="SpeakersAndSponsorsWrapper relative h-[1450px] sm:mt-[-80px] bg-feedbackSection sm:overflow-hidden	lg:overflow-scroll">
         <div id="speakers" className="SpeakersWrapper w-full flex justify-center flex flex-col m-auto">
-          <Image className="absolute sm:left-[40%] lg:left-[37%] sm:top-[13%] lg:top-[10%] z-10 scale-75" src={Satisfaction} alt={""} />
+          <Image className="absolute sm:left-[40%] lg:left-[37%] sm:top-[13%] mediumPhoneSize:top-[11.5%] lg:top-[10%] z-10 scale-75" src={Satisfaction} alt={""} />
           <p className="sm:text-4xl lg:text-6xl text-center text-white font-bold sm:mt-10 lg:mt-[100px] sm:mb-5 lg:mt-[100px]">
           Відгуки студентів:
           </p>
@@ -65,6 +67,12 @@ const SpeakersAndSponsors = () => {
                   );
                 })}
               </Slider>
+              <div className="animatedSliderButtons sm:flex lg:hidden text-white justify-center animate-shake">
+                <BouncedLeftArrow className="mt-[11%] mr-[6%]" fill="white"/>
+                 <span className=" text-2xl mt-[3.5%] text-center animate-shake animate-infinite animate-duration-[2000ms] animate-delay-0 animate-ease-linear animate-normal animate-fill-both"> Свайп <br /> вліво або вправо</span>
+                <BouncedRightArrow className="items-center	mt-[11%] ml-[6%]" fill="white" />
+              </div>
+
             </div>
           </div>
         </div>

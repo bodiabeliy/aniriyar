@@ -27,7 +27,8 @@ const config: Config = {
     screens: {
       sm: '320px',
       //=> @media (min-width: 360px) { ... }
-
+      lightPhoneSize:"361px",
+      mediumPhoneSize:"374px",
       md: '768px',
       // => @media (min-width: 768px) { ... }
 
@@ -73,7 +74,17 @@ const config: Config = {
       },
       blur: {
         xs: '2px',
-      }
+      },
+      keyframes: {
+        shake: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-5px)' },
+          '20%, 40%, 60%, 80%': { transform: 'translateX(5px)' },
+        },
+      },
+      animation: {
+        shake: 'shake 5s ease-in-out infinite',
+      },
     }
     
   },

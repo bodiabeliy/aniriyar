@@ -158,6 +158,20 @@ body::-webkit-scrollbar-thumb {
   }
  
 }
+
+@media (width<361px){
+  .slick-slider .flex .justify-center .slick-initialized {
+    max-height: 245px;
+  }
+}
+
+@media (width<376px){
+  .slick-slider .justify-center .slick-initialized {
+    max-height: 215px;
+  }
+  
+}
+
 @media (width>1024px){
   .slick-prev {
     margin-left: -40px;
