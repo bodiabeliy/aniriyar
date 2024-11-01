@@ -13,7 +13,7 @@ export default function Home() {
 
       <About />
       <SpeakersAndSponsors />
-      <Form />
+      {/* <Form /> */}
     </>
   );
 }
