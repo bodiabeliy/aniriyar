@@ -111,4 +111,5 @@ const SpeakersAndSponsors = () => {
   );
 };
 
+
 export default SpeakersAndSponsors;
