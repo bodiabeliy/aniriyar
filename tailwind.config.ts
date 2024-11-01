@@ -60,7 +60,6 @@ const config: Config = {
       feedbackSection: `url("../components/images/Rectangle 3.png")`,
       reelsSection: `url("../components/images/Rectangle 4.png")`,
 
-
       actionBtns:"linear-gradient(60deg, #E34586 20%, #5883D8 100%)",
       cardsBtns:"linear-gradient(60deg, #E34586 20%, #5883D8 100%)",
 
