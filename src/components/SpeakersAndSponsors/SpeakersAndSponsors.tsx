@@ -78,7 +78,7 @@ const SpeakersAndSponsors = () => {
 
             </div>
           </div>
-        </div>
+        </div> 
         <div id="sponsors" className="SponsorsWrapper relative bg-reelsSection w-full flex justify-center flex flex-col sm:mt-[360px] lg:mt-[440px] m-auto">
           <p className="sm:text-4xl lg:text-6xl text-center font-bold z-50">
           Вивчайте мови ефективно
