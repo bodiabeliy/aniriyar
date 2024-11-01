@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { speakersList, sponsorsList } from "@/utils/data";
 import Satisfaction from "../../../public/satisfaction 1.svg"
 import Reels1 from "../../../public/reels1.png"
+import Circle2 from "../../../public/Ellipse 4.png"
 
 
 import "slick-carousel/slick/slick.css";
@@ -12,7 +13,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import { BouncedLeftArrow } from "../icons/DoubleArrowLeft";
 import { BouncedRightArrow } from "../icons/DoubleArrowRight";
-import { ReelsVideos } from "../ReelsVideos/ReelsVideos";
 
 const SpeakersAndSponsors = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -30,9 +30,19 @@ const SpeakersAndSponsors = () => {
     slidesToShow: isMobile ? 2 : 1,
     slidesToScroll: 1,
   };
+  const SponsorSettings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    rows: isMobile?2:1,
+    slidesToShow: isMobile ? 3 : 1,
+    slidesToScroll: 1,
+  };
   return (
     <>
-      <div className="SpeakersAndSponsorsWrapper relative h-[1450px] sm:mt-[-80px] bg-feedbackSection sm:overflow-hidden	lg:overflow-scroll">
+      <div className="SpeakersAndSponsorsWrapper relative sm:h-[1450px] lg:h-full sm:mt-[-80px] bg-feedbackSection sm:overflow-x-hidden	lg:overflow-scroll">
+      <Image className="absolute sm:top-[37%] lg:top-[35%] sm:right-[55%] lg:right-[-10%] sm:scale-75 lg:scale-100 z-50" src={Circle2} alt={""} />
+
         <div id="speakers" className="SpeakersWrapper w-full flex justify-center flex flex-col m-auto">
           <Image className="absolute sm:left-[40%] lg:left-[37%] sm:top-[13%] mediumPhoneSize:top-[11.5%] lg:top-[10%] z-10 scale-75" src={Satisfaction} alt={""} />
           <p className="sm:text-4xl lg:text-6xl text-center text-white font-bold sm:mt-10 lg:mt-[100px] sm:mb-5 lg:mt-[100px]">
@@ -68,14 +78,14 @@ const SpeakersAndSponsors = () => {
 
             </div>
           </div>
-        </div>
-        <div id="sponsors" className="SponsorsWrapper w-full flex justify-center flex flex-col sm:mt-[100px] lg:mt-[90px] m-auto">
-          <p className="sm:text-4xl lg:text-6xl text-center font-bold ">
+        </div> 
+        <div id="sponsors" className="SponsorsWrapper relative bg-reelsSection w-full flex justify-center flex flex-col sm:mt-[360px] lg:mt-[440px] m-auto">
+          <p className="sm:text-4xl lg:text-6xl text-center font-bold z-50">
           Вивчайте мови ефективно
           </p>
-          <div className="mt-5 sm:flex lg:block  lg:ml-0">
-            <div className="SponsorsCards m-auto flex sm:flex-col  justify-between sm:max-w-full lg:max-w-[1100px] ">
-              <Slider className="flex justify-center" {...SponsorSettings}>
+          <div className="sm:max-h-[500px] lg:max-h-full sm:overflow-y-scroll lg:overflow-y-auto mt-5 sm:flex lg:block  lg:ml-0">
+            <div className="flex sm:flex-col lg:flex-row sm:flex-nowrap lg:flex-wrap SponsorsCards m-auto flex sm:flex-col  justify-between sm:max-w-full lg:max-w-[1100px] ">
+              {/* <Slider className="flex justify-center" {...SponsorSettings}> */}
                 {sponsorsList?.map((sponsorCard: any) => {
                   return (
                     <>
@@ -92,7 +102,7 @@ const SpeakersAndSponsors = () => {
                     </>
                   );
                 })}
-              </Slider>
+              {/* </Slider> */}
             </div>
           </div>
         </div>
