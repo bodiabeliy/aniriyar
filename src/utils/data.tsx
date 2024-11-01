@@ -34,6 +34,4 @@ export const sponsorsList = [
     {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/DSA-Investments.png", link:"https://dsainvestments.com",  name:"DSA"},
     {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/Annex-Investments.png", link:"https://annexinvestments.com", name:"Annex"},
     {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/Tykhe+Block+Ventures.png", link:"https://tykheblock.ventures", name:"TykneBlock"},
-    {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/Momentum6.png", link:"https://momentum6.com", name:"Momentum"},
-    {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/18+Ventures.png", link:"https://dsainvestments.com", name:"18 Ventures"}
 ]

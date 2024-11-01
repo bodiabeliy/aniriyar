@@ -58,6 +58,8 @@ const config: Config = {
       tutorBanner: `url("../components/images/Rectangle 1.png")`,
       aboutSection: `url("../components/images/Rectangle 2.png")`,
       feedbackSection: `url("../components/images/Rectangle 3.png")`,
+      reelsSection: `url("../components/images/Rectangle 4.png")`,
+
 
       actionBtns:"linear-gradient(60deg, #E34586 20%, #5883D8 100%)",
       cardsBtns:"linear-gradient(60deg, #E34586 20%, #5883D8 100%)",
