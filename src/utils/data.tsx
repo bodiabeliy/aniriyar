@@ -1,7 +1,7 @@
 import Reels1 from "../../public/reels1.png"
 import Reels2 from "../../public/Reels2.png"
 import Reels3 from "../../public/Reels3.png"
-import Reels4 from "../../public/reels4.png"
+import Reels4 from "../../public/Reels4.png"
 import Reels5 from "../../public/Reels5.png"
 import Reels6 from "../../public/Reels6.png"
 
