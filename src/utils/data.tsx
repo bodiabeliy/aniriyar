@@ -1,9 +1,9 @@
 import Reels1 from "../../public/reels1.png"
-import Reels2 from "../../public/reels2.png"
-import Reels3 from "../../public/reels3.png"
+import Reels2 from "../../public/Reels2.png"
+import Reels3 from "../../public/Reels3.png"
 import Reels4 from "../../public/reels4.png"
-import Reels5 from "../../public/reels5.png"
-import Reels6 from "../../public/reels6.png"
+import Reels5 from "../../public/Reels5.png"
+import Reels6 from "../../public/Reels6.png"
 
 export const discussionList = [
     {topic:"📚 Досвід", speaker:"Вже протягом 7 років займаюся репетиторством іноземних мов"},

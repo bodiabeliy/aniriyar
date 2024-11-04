@@ -80,7 +80,7 @@ const SpeakersAndSponsors = () => {
             </div>
           </div>
         </div> 
-        <div id="sponsors" className="SponsorsWrapper relative bg-reelsSection w-full flex justify-center flex flex-col sm:mt-[360px] lg:mt-[440px] m-auto">
+        <div id="reels" className="SponsorsWrapper relative bg-reelsSection w-full flex justify-center flex flex-col sm:mt-[360px] lg:mt-[440px] m-auto">
           <p className="sm:text-4xl lg:text-6xl text-center font-bold z-50">
           Вивчайте мови ефективно
           </p>
@@ -90,7 +90,7 @@ const SpeakersAndSponsors = () => {
                 {reelsList?.map((reel: any) => {
                   return (
                     <>
-                      <div className="rounded-[20px]  z-10 p-1 w-full max-w-[300px] sm:mb-8 lg:mb-0 m-auto">
+                      <div className="rounded-[20px]  z-10 p-1 w-full max-w-[300px] sm:mb-8 lg:mb-0 m-auto ">
                         <div className="rounded-[20px] flex flex-col justify-center max-w-[300px] relative">
                           <div className="p-3">
                             <div className="rellsOverlay">

@@ -33,6 +33,58 @@ body::-webkit-scrollbar-thumb {
   background-color: #6E4593;
 }
 
+.introText {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+      typing 2s steps(22) forwards,
+      cursor 0.4s step-end infinite alternate;
+}
+
+.authorName {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  animation: 
+      fadeIn 0s 2s forwards, /* Fade in after introText is done */
+      typing 2s steps(12) 2s forwards,
+      cursor 0.4s step-end infinite alternate 2s;
+}
+
+.tutorInfo {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0; /* Initially hidden */
+  animation: 
+      fadeIn 0s 4s forwards, /* Delay to start after authorName is done */
+      typing 2s steps(15) 4s forwards, /* Delay typing to match previous elements */
+      cursor 0.4s step-end infinite alternate 4s; /* Cursor blink with delay */
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  } 
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 
 .cardsBtns-animate {
   background: repeating-conic-gradient(from var(--dynamicDeg),#ab3365 20%, #4566a8 100%);

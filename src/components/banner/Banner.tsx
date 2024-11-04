@@ -18,15 +18,15 @@ const Banner = () => {
     <Modal isModalOpen={isModalOpen} setModalOpen={setIsModalOpen} />
         <div className="bannerContent sm:ml-5 lg:ml-0 lg:max-w-[70%] sm:mt-10 lg:mt-20 sm:ml-4 lg:ml-[45px] scale-105 extra-loose sm:w-[335px] lg:w-full">
         <div className="bannerContent sm:text-xl lg:text-4xl sm:mb-4 lg:mb-9 sm:pl-[5px] lg:pl-0">
-        Всім привіт, мене звати
+        <p className="introText">Всім привіт, мене звати</p>
             </div>
             <div className="bannerTitle sm:pl-[5px] lg:pl-0">
-                <p className="sm:text-5xl lg:text-7xl font-bold italic tracking-tight  font-inter ">
+                <p className="authorName sm:text-3xl lg:text-7xl font-bold italic tracking-tight  font-inter ">
                    Ірина Яричевська
                 </p>
             </div>
-            <div className="bannerContent lg:relative sm:text-xl lg:text-4xl sm:mt-4 lg:mt-9 sm:pl-[5px] lg:pl-0 lg:leading-[60px]">
-            Твій репетитор з англійської та <br /> французької мов 
+            <div className="bannerContent tutorInfo lg:relative sm:text-xl lg:text-4xl sm:mt-4 lg:mt-9 sm:pl-[5px] lg:pl-0 lg:leading-[60px]">
+            <p>Твій репетитор з англійської та <br /> французької мов</p> 
                 <Image className="absolute sm:right-10 sm:top-[25%] lg:right-[50%] lg:top-[50%] sm:scale-50 lg:scale-100" src={Flags} alt={""}  />
             </div>
             <div className="actionBtnWrapper sm:mt-[100%] sm:pb-[20px] lg:pb-0 lg:mt-20 sm:mb-0 sm:mb-0 lg:mb-10 flex sm:justify-center lg:justify-start">
