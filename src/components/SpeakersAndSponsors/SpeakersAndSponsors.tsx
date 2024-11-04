@@ -6,6 +6,7 @@ import { speakersList, sponsorsList } from "@/utils/data";
 import Satisfaction from "../../../public/satisfaction 1.svg"
 import Reels1 from "../../../public/reels1.png"
 import Circle2 from "../../../public/Ellipse 4.png"
+import play from "../../../public/play-3-1.png"
 
 
 import "slick-carousel/slick/slick.css";
@@ -93,7 +94,9 @@ const SpeakersAndSponsors = () => {
                         <div className="rounded-[20px] flex flex-col justify-center max-w-[300px] relative">
                           <div className="p-3">
                             <div className="rellsOverlay">
-                            <Image className="" src={Reels1} alt=""></Image>
+                            <Image className="reelsPreview" src={Reels1} alt=""></Image>
+                            <Image className="absolute top-[12%] scale-50" src={play} alt=""></Image>
+
                             </div>
                             <Link className={"absolute top-0 left-[10p%] p-[82px]"} href={"https://www.instagram.com/aniri_yar/reel/DA-wZzasT45/"}></Link>
                           </div>
