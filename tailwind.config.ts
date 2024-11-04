@@ -50,8 +50,10 @@ const config: Config = {
     colors: {
      white:"#fff",
      textColor:"#1C0606",
-     hoveredLinks:"#eda551",
+     mainOrange:"#eda551",
      purpure:"#6E4593",
+     darkOrange:"#F2B46C",
+     darkOrangeMoble:"#F7C285",
      transparent:"transparent"
     },
     backgroundImage: {
@@ -59,6 +61,8 @@ const config: Config = {
       aboutSection: `url("../components/images/Rectangle 2.png")`,
       feedbackSection: `url("../components/images/Rectangle 3.png")`,
       reelsSection: `url("../components/images/Rectangle 4.png")`,
+      priceListSection: `url("../components/images/Rectangle 5.png")`,
+
 
       actionBtns:"linear-gradient(60deg, #E34586 20%, #5883D8 100%)",
       cardsBtns:"linear-gradient(60deg, #E34586 20%, #5883D8 100%)",

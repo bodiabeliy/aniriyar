@@ -35,3 +35,21 @@ export const sponsorsList = [
     {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/Annex-Investments.png", link:"https://annexinvestments.com", name:"Annex"},
     {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/Tykhe+Block+Ventures.png", link:"https://tykheblock.ventures", name:"TykneBlock"},
 ]
+
+export const priceList =[
+    {
+        name:"Індивідуальні заняття",
+        describing:["✅ англійська (А1-В2)", " ✅ французька (А1-В1)"],
+        price:"400 грн/год"
+    },
+    {
+        name:"Парні заняття",
+        describing:["✅ англійська (А1-В2)", " ✅ французька (А1-В1)"],
+        price:"250 грн/год 300 грн/год"
+    },
+    {
+        name:"Групові заняття",
+        describing:["✅ англійська (А1/A2/В1)"],
+        price:"200 грн/год"
+    }
+]

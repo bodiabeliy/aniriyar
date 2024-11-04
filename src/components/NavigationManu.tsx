@@ -13,16 +13,16 @@ export const NavigationManu = () => {
       <img className="sm:scale-75 lg:scale-100 sm:mt-[15px] lg:none" src={Logo.src} alt="" />
       <div className="navbarDesktop sm:hidden md:block">
         <ul className="pt-3 text-lg lg:mr-[-50px] tracking-navigateLink">
-          <Link className="ml-10 hover:text-hoveredLinks" href={"/"}>
+          <Link className="ml-10 hover:text-mainOrange" href={"/"}>
             Про мене
           </Link>
-          <Link className="ml-10 hover:text-hoveredLinks" href={"#about"}>
+          <Link className="ml-10 hover:text-mainOrange" href={"#about"}>
             Відгуки студентів
           </Link>
-          <Link className="ml-10 hover:text-hoveredLinks" href={"#topics"}>
+          <Link className="ml-10 hover:text-mainOrange" href={"#topics"}>
             Уроки
           </Link>
-          <Link className="ml-10 hover:text-hoveredLinks" href={"#speakers"}>
+          <Link className="ml-10 hover:text-mainOrange" href={"#speakers"}>
             Тарифи
           </Link>
           
@@ -31,16 +31,16 @@ export const NavigationManu = () => {
       
       <div className="navbarMobile sm:block md:hidden w-full">
         <ul className={`tracking-navigateLink ${opened ? "block":"hidden" } sm:absolute md:relative sm:left-0 sm:top-0 sm:pt-10 sm:pb-10 sm:h-screen flex flex-col w-full bg-tutorBanner z-10`}>
-          <Link className="ml-10 pt-4 hover:text-hoveredLinks" href={"/"}>
+          <Link className="ml-10 pt-4 hover:text-mainOrange" href={"/"}>
           Про мене
           </Link>
-          <Link className="ml-10 pt-4 hover:text-hoveredLinks" href={"#about"}>
+          <Link className="ml-10 pt-4 hover:text-mainOrange" href={"#about"}>
           Відгуки студентів
           </Link>
-          <Link className="ml-10 pt-4 hover:text-hoveredLinks" href={"#topics"}>
+          <Link className="ml-10 pt-4 hover:text-mainOrange" href={"#topics"}>
           Уроки
           </Link>
-          <Link className="ml-10 pt-4 hover:text-hoveredLinks" href={"#speakers"}>
+          <Link className="ml-10 pt-4 hover:text-mainOrange" href={"#speakers"}>
           Тарифи
           </Link>
           

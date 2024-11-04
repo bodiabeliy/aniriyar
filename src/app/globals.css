@@ -58,6 +58,16 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+.PriceListWrapperMobile{
+  background-image: linear-gradient(to bottom, #f8c487 -8%, #f5bc79, #f3b56c, #f0ad5f, #eda551);
+}
+
+
+.PriceListWrapper,
+.footerWrapper {
+  background-image: linear-gradient(to bottom, #eda551);
+}
+
 
 .tutor::before {
   content: ''; 

@@ -1,4 +1,5 @@
 import About from "@/components/About/About";
+import PriceList from "@/components/PriceList/PriceList";
 import SpeakersAndSponsors from "@/components/SpeakersAndSponsors/SpeakersAndSponsors";
 import Banner from "@/components/banner/Banner";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <SpeakersAndSponsors />
       {/* <Form /> */}
+      <PriceList />
     </>
   );
 }
