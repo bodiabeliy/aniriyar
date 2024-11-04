@@ -11,7 +11,7 @@ export interface BtnProps {
   className: string
   text:string,
   onClick?:() => void;
-  disabled:boolean
+  disabled:boolean,
 }
 
 export type ComponentProps = BtnProps

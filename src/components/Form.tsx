@@ -1,94 +1,32 @@
 "use client"
 
-import { useCallback, useState } from "react";
-import { ActionButton } from "./buttons/ActionButton";
-import api from '@/services/index';
-import { ToastContainer, toast } from 'react-toastify';
+
 
 import 'react-toastify/dist/ReactToastify.css';
 export const Form = () => {
 
-  const [email, SetEmail] = useState<string>("")
-  const [notEmpty, setNotEmpty] = useState<boolean>(false)
-  const [notValid, setNotValid] = useState<boolean>(true)
-  const [isLoading, setIsLoading] = useState<boolean>(false)
-
-
-  const validateEmail = (email:string) => {
-    
-    const regex =/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    let isValid =regex.test(email)    
-    return isValid
-  };
-
-  const EmailSender = useCallback(async() => {
-    try {
-      if (notValid) {
-        setIsLoading(true)
-        toast(`Sending...`)
-
-        await api.post(
-            `/send`,
-            {
-              email,
-            },
-          );
-      }
-      SetEmail("")
-      setIsLoading(false)
-      toast.success(`Email + ${email} sent successfuly!`) 
-
-    } catch (error) {
-      console.log(error);
-      
-      toast.error(`Happpend error: ${error}`);
-    }
-  }, [email, notEmpty, notValid, isLoading])
-
-  const SendEmail = useCallback((e:any)  => {
-    SetEmail(e.target.value)
-    setNotValid(validateEmail(e.target.value))
-    if (e.target.value == "") {
-      setNotEmpty(true)
-
-    }
-    else setNotEmpty(false)
-  },[email, notEmpty, notValid])
-
-  
-
   return (
-    <section id="form" className="formWrapper w-full flex justify-center sm:mt-[-230px] lg:mt-[0px] sm:mb-2 lg:mb-10">
-      <div className="  rounded-[30px] bg-purpure z-10 p-1 sm:w-[300px] lg:w-[560px] sm:h-[350px] lg:h-[450px] sm:mb-8 lg:mb-0">
-        <div className="relative rounded-[30px] bg-white flex flex-col justify-start sm:w-[290px] lg:w-[550px] h-full p-5">
-         <div className="flex flex-col">
-          <p className="sm:text-4xl lg:text-4xl sm:text-center lg:text-center font-bold mb-10">Registration to conference  </p>
-          <input className={`${notEmpty &&" border-[3px] border-[#f44336]"} p-5 rounded-[20px] w-full text-[#000]`} type="text" placeholder="Enter email..." onChange={(e) => SendEmail(e)} value={email}/>
-          {notEmpty && <p className="text-[#f44336]">Email not must be empty!</p> }
-          {!notValid && <p className="text-[#f44336]">Email not valid!</p> }
-
-          <ActionButton 
-            onClick={() => EmailSender()} 
-            className={` ${notEmpty || !notValid? "bg-[#767676] disabled": "bg-actionBtns"} actionBtn font-pixel absolute bottom-[50px] sm:left-[5%] lg:left-[25%] rounded-full lg:font-semibold sm:text-2xl lg:text-3xl p-5 sm:w-[90%] lg:w-[270px]`}
-            text={"Get in touch!"} 
-            disabled={notEmpty || !notValid}
-            />
-          { <ToastContainer
-            position="top-right"
-            autoClose={3000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="dark"
-
-       />}
-         </div>
+    <div id="popup-modal" tabIndex={-1} className="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div className="relative p-4 w-full max-w-md max-h-full">
+        <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <button type="button" className="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal">
+                <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                <span className="sr-only">Close modal</span>
+            </button>
+            <div className="p-4 md:p-5 text-center">
+                <svg className="mx-auto mb-4 text-gray-400 w-12 h-12 dark:text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                </svg>
+                <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Are you sure you want to delete this product?</h3>
+                <button data-modal-hide="popup-modal" type="button" className="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
+                    Yes, I`m sure
+                </button>
+                <button data-modal-hide="popup-modal" type="button" className="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">No, cancel</button>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</div>
   );
 };

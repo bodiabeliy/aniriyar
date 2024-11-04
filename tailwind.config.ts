@@ -51,7 +51,7 @@ const config: Config = {
      white:"#fff",
      textColor:"#1C0606",
      mainOrange:"#eda551",
-     purpure:"#6E4593",
+     overlay:"#e3e3e3",
      darkOrange:"#F2B46C",
      darkOrangeMoble:"#F7C285",
      transparent:"transparent"

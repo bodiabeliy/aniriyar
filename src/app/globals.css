@@ -33,10 +33,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #6E4593;
 }
 
-/* gradient text */
-.actionBtn:hover:not(.disabled) {
-  background: #e6e6e6;
-}
 
 .cardsBtns-animate {
   background: repeating-conic-gradient(from var(--dynamicDeg),#ab3365 20%, #4566a8 100%);
@@ -123,13 +119,19 @@ body::-webkit-scrollbar-thumb {
   color: red;
 }
 
+#pricelist {
+  overflow-x: hidden;
+}
 
 @media (width<500px){
-  .slick-next {
+  .slick-next::before {
     display: none;
   }
-  .slick-prev {
+  .slick-prev::before {
    display: none;
+  }
+  .slick-arrow .slick-next .slick-disabled {
+    display: none;
   }
   .actionBtnWrapper {
     justify-content: flex-end !important;
@@ -146,7 +148,6 @@ body::-webkit-scrollbar-thumb {
   .withbooks {
     top: 12px;
   }
-
   
 }
 @media (width<390px){
