@@ -63,7 +63,7 @@ const PriceList = () => {
                             <p className="text-center sm:text-xl font-bold lg:text-4xl">
                               {price?.price}
                             </p>
-                            <p><span className="text">*</span></p>
+                            <p><span className="text">{price?.astrix}</span></p>
                           </div>
                         </div>
                       </div>

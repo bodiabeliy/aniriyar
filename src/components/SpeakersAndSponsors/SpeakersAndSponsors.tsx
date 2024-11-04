@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import { speakersList, sponsorsList } from "@/utils/data";
+import { speakersList, reelsList } from "@/utils/data";
 import Satisfaction from "../../../public/satisfaction 1.svg"
 import Reels1 from "../../../public/reels1.png"
 import Circle2 from "../../../public/Ellipse 4.png"
@@ -87,18 +87,18 @@ const SpeakersAndSponsors = () => {
           <div className="sm:max-h-[500px] lg:max-h-full sm:overflow-y-scroll lg:overflow-y-auto mt-5 sm:flex lg:block  lg:ml-0">
             <div className="flex sm:flex-col lg:flex-row sm:flex-nowrap lg:flex-wrap SponsorsCards m-auto flex sm:flex-col  justify-between sm:max-w-full lg:max-w-[1100px] ">
               {/* <Slider className="flex justify-center" {...SponsorSettings}> */}
-                {sponsorsList?.map((sponsorCard: any) => {
+                {reelsList?.map((reel: any) => {
                   return (
                     <>
                       <div className="rounded-[20px]  z-10 p-1 w-full max-w-[300px] sm:mb-8 lg:mb-0 m-auto">
                         <div className="rounded-[20px] flex flex-col justify-center max-w-[300px] relative">
                           <div className="p-3">
                             <div className="rellsOverlay">
-                            <Image className="reelsPreview" src={Reels1} alt=""></Image>
+                            <Image className="reelsPreview" src={reel.author} alt=""></Image>
                             <Image className="absolute top-[12%] scale-50" src={play} alt=""></Image>
 
                             </div>
-                            <Link className={"absolute top-0 left-[10p%] p-[82px]"} href={"https://www.instagram.com/aniri_yar/reel/DA-wZzasT45/"}></Link>
+                            <Link className={"absolute top-0 left-0 right-0 bottom-0 p-[82px]"} href={reel.link}></Link>
                           </div>
                         </div>
                       </div>

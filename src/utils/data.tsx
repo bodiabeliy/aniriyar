@@ -1,3 +1,10 @@
+import Reels1 from "../../public/reels1.png"
+import Reels2 from "../../public/reels2.png"
+import Reels3 from "../../public/reels3.png"
+import Reels4 from "../../public/reels4.png"
+import Reels5 from "../../public/reels5.png"
+import Reels6 from "../../public/reels6.png"
+
 export const discussionList = [
     {topic:"📚 Досвід", speaker:"Вже протягом 7 років займаюся репетиторством іноземних мов"},
     {topic:"🌏 Широка аудиторія", speaker:"Навчаю учнів з 6+ країн"},
@@ -11,7 +18,7 @@ export const speakersList =[
         position:"Моя мама дуже задоволена заняттями з вами. І ми дуже раді що вона навчається у вас. Заняття проходять дуже легко і спокійно) Вона ніколи не відчувала напруги чи стресу. Ми побачили прогрес. Тому ми з впевніністю можемо вас рекомендувати як викладача",  },
     {
         name:"Влада",
-        position:"Ірина-чудовий репетитор. Розвивається, не стоїть на місці і розвиває мене. Знайшла підхід до мене і викладає інформацію цікаво і доступно. Допомагає мені покращити і підвищити рівень знань з англійської мови. Легко знаходить зі мною мову, приємна в спілкуваннІ.",
+        position:"Ірина-чудовий репетитор. Розвивається, не стоїть на місці і розвиває мене. Знайшла підхід до мене і викладає інформацію цікаво і доступно. Допомагає мені покращити і підвищити рівень знань з англійської мови. Легко знаходить зі мною мову, приємна в спілкуваннi.",
     },
     {
         name:"Іванка",
@@ -27,13 +34,13 @@ export const speakersList =[
     },
 ]
 
-export const sponsorsList = [
-    {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/Woodstock+Fund.png", link:"https://woodstockfund.com", name:"WoodStock"},
-    {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/888vc.png", link:"https://www.888vc.co", name:"888C"},
-    {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/C3.png", link:"https://wegrowwithc3.com", name:"C3"},
-    {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/DSA-Investments.png", link:"https://dsainvestments.com",  name:"DSA"},
-    {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/Annex-Investments.png", link:"https://annexinvestments.com", name:"Annex"},
-    {sponsor:"https://crypto-conference.s3.amazonaws.com/sponsors/Tykhe+Block+Ventures.png", link:"https://tykheblock.ventures", name:"TykneBlock"},
+export const reelsList = [
+    {author:Reels1, link:"https://www.instagram.com/aniri_yar/reel/DA-wZzasT45/", name:"WoodStock"},
+    {author:Reels2, link:"https://www.instagram.com/reel/C_47roBM7Rp/", name:"888C"},
+    {author:Reels3, link:"https://www.instagram.com/reel/C_2tvCSMn5Y/", name:"C3"},
+    {author:Reels4, link:"https://www.instagram.com/reel/C_xwDjfsN1R/",  name:"DSA"},
+    {author:Reels5, link:"https://www.instagram.com/reel/C-NuYZZswNL/", name:"Annex"},
+    {author:Reels6, link:"https://www.instagram.com/reel/C9pyH5NMdNQ/", name:"TykneBlock"},
 ]
 
 export const priceList =[
@@ -50,6 +57,8 @@ export const priceList =[
     {
         name:"Групові заняття",
         describing:["✅ англійська (А1/A2/В1)"],
-        price:"200 грн/год"
+        price:"200 грн/год",
+        astrix:"*",
+        details:"час узгоджується"
     }
 ]
