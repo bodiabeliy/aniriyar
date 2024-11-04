@@ -37,10 +37,10 @@ export const speakersList =[
 export const reelsList = [
     {author:Reels1, link:"https://www.instagram.com/aniri_yar/reel/DA-wZzasT45/", name:"WoodStock"},
     {author:Reels2, link:"https://www.instagram.com/reel/C_47roBM7Rp/", name:"888C"},
-    {author:Reels3, link:"https://www.instagram.com/reel/C_2tvCSMn5Y/", name:"C3"},
+    {author:Reels3, link:"https://www.instagram.com/reel/C-cwecGsqc7/", name:"C3"},
     {author:Reels4, link:"https://www.instagram.com/reel/C_xwDjfsN1R/",  name:"DSA"},
     {author:Reels5, link:"https://www.instagram.com/reel/C-NuYZZswNL/", name:"Annex"},
-    {author:Reels6, link:"https://www.instagram.com/reel/C9pyH5NMdNQ/", name:"TykneBlock"},
+    {author:Reels6, link:"https://www.instagram.com/reel/C_2tvCSMn5Y/", name:"TykneBlock"},
 ]
 
 export const priceList =[

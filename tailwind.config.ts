@@ -50,6 +50,7 @@ const config: Config = {
     colors: {
      white:"#fff",
      textColor:"#1C0606",
+     error:"#FF0000",
      mainOrange:"#eda551",
      overlay:"#e3e3e3",
      darkOrange:"#F2B46C",

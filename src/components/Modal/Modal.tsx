@@ -31,7 +31,7 @@ const Modal = ({ isModalOpen, setModalOpen }: any) => {
           <div className="mt-8 text-center">
             <h2 className="text-2xl font-semibold">Збережіть свій час ⏳</h2>
             <p className="mt-4 text-gray-600">
-              Зануртесь у цікаве навчаннябез зайвих турбот з моєю допомогою.
+              Зануртесь у цікаве навчання без зайвих турбот з моєю допомогою.
             </p>
             <div className="flex justify-around">
               <Link href={"https://t.me/aniri_yar"}>

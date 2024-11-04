@@ -60,10 +60,10 @@ const PriceList = () => {
                               ))}
                             </div>
 
-                            <p className="text-center sm:text-xl font-bold lg:text-4xl">
+                            <p className="text-center sm:text-2xl font-bold lg:text-4xl">
                               {price?.price}
                             </p>
-                            <p><span className="text">{price?.astrix}</span></p>
+                            <p className="textColor text-center text-xl mt-5"><span className="text text-error">{price?.astrix}</span>{price?.details}</p>
                           </div>
                         </div>
                       </div>
