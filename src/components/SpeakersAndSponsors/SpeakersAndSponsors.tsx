@@ -41,7 +41,7 @@ const SpeakersAndSponsors = () => {
   };
   return (
     <>
-      <div className="SpeakersAndSponsorsWrapper relative sm:h-full lg:h-full sm:mt-[-80px] bg-feedbackSection sm:overflow-x-hidden	lg:overflow-scroll">
+      <div className="SpeakersAndSponsorsWrapper relative sm:h-full lg:h-full sm:mt-[-80px] bg-feedbackSection sm:overflow-x-hidden	lg:overflow-x-hidden">
       <Image className="absolute sm:top-[37%] lg:top-[35%] sm:right-[55%] lg:right-[-10%] sm:scale-75 lg:scale-100 z-50" src={Circle2} alt={""} />
 
         <div id="speakers" className="SpeakersWrapper w-full flex justify-center flex flex-col m-auto">
