@@ -4,17 +4,7 @@ import "./globals.css";
 import { Metadata } from "next";
 
 
-export const metaData ={
-  openGraph:{
-    title:"AniriYar",
-    description:"Твій репетитор з англійської та французької мов",
-    keywords:["репетитор", "репетитор з англійської", "англійська мова", "англійська за 1 хвилину", "вивчення англійської мови", "уроки англійської", "французька мова", "репетитор з французької мови", "французька 1 хвилину",  "вивчення французької мови", "уроки французької"],
-    icons: {
-      icon: "@/../../public/see you later.png"
-    },
-  }
-  
-}
+
 
 export default function LocaleLayout({
   children,
