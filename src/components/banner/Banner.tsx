@@ -35,7 +35,7 @@ const Banner = () => {
             
         </div>
         <div className="sm:hidden lg:block tutorImage lg:absolute lg:right-[1%] lg:top-[21%]">
-                    <Image src={Tutor} alt={""} />
+                    <Image src={Tutor} alt={"Tutor Iryna Yarychewska"} />
                 </div>
         <Image className=" mobileTutorImage sm:block lg:hidden absolute  sm:right-[0%] lg:top-[0%] lg:right-[0%] m-auto w-[90%] top-[230px] opacity-90 scale-100" src={Tutor} alt="" />
     </>

@@ -1,6 +1,17 @@
 import { Footer } from "@/components/Footer";
 import { NavigationManu } from "@/components/NavigationManu";
 import "./globals.css";
+import { Metadata } from "next";
+
+
+export const metaData:Metadata ={
+  title:"AniriYar",
+  description:"Твій репетитор з англійської та французької мов",
+  keywords:["репетитор", "репетитор з англійської", "англійська мова", "англійська за 1 хвилину", "вивчення англійської мови", "уроки англійської", "французька мова", "репетитор з французької мови", "французька 1 хвилину",  "вивчення французької мови", "уроки французької"],
+  icons: {
+    icon: "@/../../public/see you later.png"
+  },
+}
 
 export default function LocaleLayout({
   children,
@@ -8,7 +19,7 @@ export default function LocaleLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html style={{scrollBehavior:'smooth'}}>
+    <html style={{scrollBehavior:'smooth'}} lang="en">
       <body className="app bg-white text-textColor lg:w-full">
       <div className="tutor bg-tutorBanner ">
           <div>
