@@ -3,7 +3,7 @@ import Image from "next/image"
 import { ActionButton } from "../buttons/ActionButton";
 import FigureMobile from "@/../public/figure1.png"
 import Flags from "@/../public/🇬🇧🇫🇷.png"
-import Tutor from "@/../public/Aniri.png"
+import Tutor from "@/../public/Aniri-3(little).png"
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 
