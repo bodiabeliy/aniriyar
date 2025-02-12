@@ -12,8 +12,14 @@ const config: Config = {
       "aboutSection":"auto 111%"
     },
     fontFamily: {
-      inter:[
-        '"Inter", sans-serif',
+      monterchi:[
+        'Monterchi Trial sans-serif', 
+      ],
+      lora:[
+        "Lora"
+      ],
+      grotesk:[
+        "Amazing Grotesk"
       ]
     },
     letterSpacing: {
@@ -51,7 +57,7 @@ const config: Config = {
      white:"#fff",
      textColor:"#1C0606",
      error:"#FF0000",
-     mainOrange:"#eda551",
+     mainOrange:"#f46530",
      overlay:"#e3e3e3",
      darkOrange:"#F2B46C",
      darkOrangeMoble:"#F7C285",

@@ -14,4 +14,12 @@ export interface BtnProps {
   disabled:boolean,
 }
 
+export interface BtnDropDownProps {
+  className: string
+  text:string,
+  onClick?:() => void;
+  disabled:boolean,
+  isDropDownOpen:boolean
+}
+
 export type ComponentProps = BtnProps

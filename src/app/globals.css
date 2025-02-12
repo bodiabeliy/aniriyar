@@ -1,12 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+
+@import url('https://fonts.cdnfonts.com/css/monterchi-trial');
+@import url('https://fonts.cdnfonts.com/css/amazing-grotesk?styles=40995');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
   margin: 0;
@@ -109,12 +113,12 @@ body::-webkit-scrollbar-thumb {
 
 
 .PriceListWrapperMobile{
-  background-image: linear-gradient(to bottom, #f8c487 -8%, #f5bc79, #f3b56c, #f0ad5f, #eda551);
+  background-image: linear-gradient(to bottom, #f8c487 -8%, #f5bc79, #f3b56c, #f0ad5f, #f46530);
 }
 
 
 .PriceListWrapper {
-  background-image: linear-gradient(to bottom, #eda551);
+  background-image: linear-gradient(to bottom, #f46530);
 }
 
 
@@ -125,7 +129,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute; 
   width: 430px;
   height: 430px; 
-  background: #EDA551; 
+  /* background: #ff914d;  */
   border-radius : 50%;
 }
 
@@ -146,9 +150,7 @@ body::-webkit-scrollbar-thumb {
 .slick-prev {
   z-index: 333;
 }
-.actionBtn {
-  font-family: "Inter" sans-serif !important;
-}
+
 
 .mobileTutorImage {
   position: absolute;
@@ -188,6 +190,9 @@ body::-webkit-scrollbar-thumb {
   .actionBtnWrapper {
     justify-content: flex-end !important;
   }
+  .actionBtnWrapper button {
+    margin-left: 30px;
+  }
   .mobileTutorImage {
     top: 30%;
   }
@@ -211,6 +216,9 @@ body::-webkit-scrollbar-thumb {
   }
   .actionBtnWrapper {
     justify-content: center !important;
+  }
+  .actionBtnWrapper button {
+    margin-left: 10px;
   }
   .tutor::before {
     width: 320px;
@@ -238,6 +246,16 @@ body::-webkit-scrollbar-thumb {
 @media (width<376px){
   .slick-slider .justify-center .slick-initialized {
     max-height: 215px;
+  }
+  .dropdown-content {
+    margin-top: 180px;
+  }
+  
+}
+
+@media (width<391px){
+  .actionBtnWrapper button {
+    margin-left: 10px;
   }
   
 }

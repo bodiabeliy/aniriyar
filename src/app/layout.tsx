@@ -13,7 +13,7 @@ export default function LocaleLayout({
     <html style={{scrollBehavior:'smooth'}} lang="en">
        
       <body className="app bg-white text-textColor lg:w-full">
-      <div className="tutor bg-tutorBanner ">
+      <div className="tutor bg-white ">
           <div>
           <NavigationManu />
           {children}

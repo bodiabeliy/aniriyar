@@ -30,7 +30,7 @@ export const NavigationManu = () => {
       </div>
       
       <div className="navbarMobile sm:block md:hidden w-full">
-        <ul className={`tracking-navigateLink ${opened ? "block":"hidden" } sm:absolute md:relative sm:left-0 sm:top-0 sm:pt-10 sm:pb-10 sm:h-screen flex flex-col w-full bg-tutorBanner z-10 font-xl`}>
+        <ul className={`tracking-navigateLink ${opened ? "block":"hidden" } sm:absolute md:relative sm:left-0 sm:top-0 sm:pt-10 sm:pb-10 sm:h-screen flex flex-col w-full bg-white z-10 font-xl`}>
           <Link className="ml-10 pt-4 hover:text-mainOrange" href={"#about"}>
           Про мене
           </Link>
